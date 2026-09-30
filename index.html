@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../ATV_4B/CSS/reset.css">
+    <link rel="stylesheet" href="../ATV_4B/CSS/style.css">
+    <link rel="icon" href="../ATV_4B/image/bigben.jpg">
+    <title>Atrativos turísticos</title>
+</head>
+<body>
+    <header>
+        <section class="logo">
+            📍 Descubra
+        </section>
+
+        <nav> <!-- é um elemento semântico do HTML usado para agrupar blocos importantes de links de navegação. Ela ajuda mecanismos de busca e leitores de tela a identificarem rapidamente a estrutura do site, melhorando a acessibilidade e o SEO-->
+            
+                <a href="#">Início</a>
+                <li><a href="#">Destinos</a>
+                    <span class="tooltip">Da inglaterra para o coração!</span>
+                </li>
+
+                <li><a href="#">Pontos Turísticos</a>
+                    <span class="tooltip">Pra quem adora viajar!</span>
+                </li>
+                
+                <li><a href="#">Sobre</a>
+                    <span class="tooltip">Site turístico de pequeno porte</span>
+                </li>
+
+                <li> <!--define um item de lista, e ela deve ficar sempre dentro de um elemento pai como <ul> (lista não ordenada) ou <ol> (lista ordenada)r-->
+                    <a href="#">Contato</a>
+
+                    <span class="tooltip">(999) 99999-9999</span> <!--conteiner generico em linha para conteúdo fraseado , que não representa nada por natureza. Ele pode ser usado para agrupar elementos para fins de estilo-->
+
+                </li>
+        </nav>
+
+        <a href="https://pt.wikipedia.org/wiki/Inglaterra"><button class="favoritos">❤ Saiba mais ❤</button></a>
+    </header>
+
+    <main>
+
+        <section class="banner01">
+            <section class="banner02"></section>
+
+            <section class="banner03">
+                <h1>Explore os melhores lugares da Inglaterra</h1>
+
+                <p>
+                    Descubra pontos turísticos incríveis, planeje sua próxima
+                    viagem e viva experiências inesquecíveis.
+                </p>
+
+                <a href="https://guia.melhoresdestinos.com.br/categorias/inglaterra-55-cat.html"><button>Explore aqui também!</button></a>
+
+                <!--input: campos interativos para coletar dados, desde textos simples e senhas até arquivos e datas-->
+                <input
+                    
+                    type="text"
+                    placeholder="Busque por destinos, cidades ou atrações..."
+                >
+            </section>
+        </section>
+
+        <section class="categorias">
+            <h2>Navegue por categorias</h2>
+
+            <section class="cartao">
+                <!--Melhor usar DIV por que é apenas para estruturar as imagens-->
+                <div class="cartao02">
+                    <a href="../ATV_4B/HTML/natureza.html" class="cartao02">
+                        <figure>
+                            <img src="../ATV_4B/image/natureza.jpg" alt="Natureza">
+                            <h3>Natureza</h3>
+                        </figure>
+                    </a>
+                </div>
+
+                <div class="cartao02">
+                    <a href="../ATV_4B/HTML/praias.html" class="card">
+                        <figure>
+                            <img src="../ATV_4B/image/dorset.jpg" alt="praia">
+                            <h3>Praias</h3>
+                        </figure>
+                    </a>
+                </div>
+
+                <div class="cartao02">
+                    <a href="../ATV_4B/HTML/historico.html" class="cartao02">
+                        <figure>
+                            <img src="../ATV_4B/image/castelo.jpg" alt="Monumento histórico">
+                            <h3>Históricos</h3>
+                        </figure>
+                    </a>
+                </div>
+
+                <div class="cartao02">
+                    <a href="../ATV_4B/HTML/cidades.html">
+                        <figure>
+                            <img src="../ATV_4B/image/londres.jpg" alt="Cidades">
+                            <h3>Cidades</h3>
+                        </figure>
+                    </a>
+                </div>
+
+                <div class="cartao02">
+                    <a href="../ATV_4B/HTML/gastronomia.html">
+                        <figure>
+                            <img src="../ATV_4B/image/lanche.jpg" alt="Gastronomia">
+                            <h3>Gastronomia</h3>
+                        </figure>
+                    </a>
+                </div>
+
+            </section>
+
+            <video src="video/england.mp4" type="video/mp4" controls width="400"> </video>
+
+            <div style="clear: left;"></div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Todas as imagens são de direito <a href="https://pixabay.com/pt/">
+            www.Pixabay.com.br</a></p>
+    </footer>
+    
+
+</body>
+</html>
