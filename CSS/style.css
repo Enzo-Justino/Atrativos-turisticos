@@ -1,0 +1,195 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration:none; /*tirar sublinhado de link*/
+}
+
+body{
+    background:#f5f5f5;
+}
+
+header{
+    position:fixed;
+    top:0; /* determina a posição vertical de um elemento. Ela só funciona quando combinada com a propriedade position */
+    width:100%;
+    height:80px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 60px;
+
+    background:#04192d;
+    color:white;
+    z-index:100; /*controla a ordem de empilhamento de elementos que se sobrepõem em uma página web. Ela define a posição de um elemento no eixo Z (profundidade)*/
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav{ /*é um elemento semântico do HTML5 usado para agrupar blocos importantes de links de navegação. Ela ajuda mecanismos de busca e leitores de tela a identificarem rapidamente a estrutura do site, melhorando a acessibilidade e o SEO*/
+    display:flex;
+    gap:35px; /*define o espaçamento entre linhas e colunas em contêineres de layout, como Flexbox, CSS Grid e Multi-column. Ela funciona como uma "calha" que separa os elementos*/
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+.favoritos{
+    background:transparent;
+    border:1px solid white;
+    color:white;
+    padding:12px 20px;
+    border-radius:12px;
+    cursor:pointer;
+}
+
+.banner01{
+    height:100vh; /*unidade de medida relativa do CSS que equivale a 1% da altura da área visível do navegador (viewport)*/
+
+    background-image:
+        linear-gradient(rgba(0,0,0,.5),
+        rgba(0,0,0,.5)),
+        url("../image/ingla.jpg"); /*img do CSS*/
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+
+    color:white;
+}
+
+.banner03{
+    max-width:700px;
+    margin-left:80px;
+}
+
+.banner01 h1{
+    font-size:70px;
+    margin-bottom:20px;
+}
+
+.banner01 p{
+    font-size:24px;
+    line-height:1.6;
+    margin-bottom:30px;
+}
+
+.banner01 button{
+    background:#2d8cff;
+    border:none;
+    color:white;
+
+    padding:18px 30px;
+    border-radius:12px;
+
+    font-size:18px;
+    cursor:pointer;
+
+    margin-bottom:30px;
+}
+
+.banner01 input{
+    width:100%;
+    padding:20px;
+    border:none;
+    border-radius:15px;
+    font-size:18px;
+}
+
+.categorias{
+    padding:80px;
+}
+
+.categorias h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:40px;
+}
+
+.cartao{ /*caixas*/
+    display:grid; /* cria layouts em grade (bidimensionais), dividindo o espaço em linhas e colunas.*/
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); /*define o número e a largura das colunas em um layout de grade (CSS Grid). Cada valor inserido cria uma nova coluna, permitindo organizar elementos em páginas web de forma bidimensional (trabalhando simultaneamente com linhas e colunas).*/
+    gap:25px;
+}
+
+.cartao02{ /*caixas*/
+    background:white;
+    border-radius:15px;
+    overflow:hidden; /* no CSS controla o que acontece quando o conteúdo de um elemento é grande demais para caber na área ou caixa designada. Ela define se o excesso deve ser cortado (ocultado) ou se barras de rolagem devem ser adicionadas para permitir a leitura.*/
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.cartao02 img{
+    width:100%;
+    height:250px;
+    object-fit:cover; /*define como o conteúdo de um elemento substituído (como uma tag de imagem <img> ou um vídeo <video>) deve ser redimensionado e ajustado dentro do seu contêiner.*/
+}
+
+.cartao02 h3{
+    padding:20px;
+    font-size:24px;
+}
+
+img{
+margin: 1.0;
+border-radius: 15px;
+
+
+}
+img:hover{
+    transform: scale(1.1);
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+video{
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+   
+}
+
+a,.logo,.favoritos{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li{
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip{
+    visibility: hidden;
+    opacity: 0;
+
+    position: absolute;
+    top: 120%;          /* Aparece abaixo */
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: #222;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    white-space: nowrap; /*força todo o texto de um elemento a ficar em uma única linha, impedindo que ele quebre para a linha de baixo*/
+
+    transition: opacity 0.3s;
+    z-index: 1000; /*define a ordem de sobreposição (profundidade) dos elementos.*/
+}
+
+li:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
